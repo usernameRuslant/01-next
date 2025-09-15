@@ -1,0 +1,22 @@
+.momTipCard {
+  border-radius: 32px;
+  background: var(--color-scheme-foreground);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.momTipCard_title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .momTipCard {
+    margin-bottom: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .momTipCard {
+    width: 642px;
+    height: 138px;
+    margin-bottom: 0px;
+  }
+}

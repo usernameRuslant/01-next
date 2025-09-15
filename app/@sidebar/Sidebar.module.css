@@ -1,0 +1,13 @@
+.navigation {
+  display: none;
+}
+.logout {
+}
+@media (min-width: 1440px) {
+  .navigation {
+    display: block;
+    padding: 8px 16px 0px;
+    width: 312px;
+    /* width: 200px; */
+  }
+}

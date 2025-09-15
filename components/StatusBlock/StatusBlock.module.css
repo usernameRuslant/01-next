@@ -1,0 +1,40 @@
+.item {
+  border: 0px solid var(--color-scheme-border);
+  border-radius: 32px;
+  padding: 16px;
+
+  background: var(--color-scheme-foreground);
+}
+.list {
+  display: grid;
+  /* grid-template-columns: repeat(
+    auto-fit,
+    minmax(140px, 1fr)
+  ); */
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; /* по умолчанию */
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .list {
+    gap: 32px; /* от 768px до 1439px */
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .list {
+    width: 642px;
+
+    gap: 32px; /* можно оставить 32px, как просил */
+    /* grid-template-columns: repeat(
+      2,
+      1fr
+    );  */
+  }
+  .item {
+    height: 127px;
+  }
+}

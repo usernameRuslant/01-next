@@ -1,0 +1,43 @@
+/* .container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+*/
+/* @media only screen and (min-width: 1440px) {
+} */
+
+.container {
+  padding: 0 20px;
+  padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .greetingBlock {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding-bottom: 32px;
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
