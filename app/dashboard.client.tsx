@@ -2,15 +2,18 @@ import BabyTodayCard from '@/components/BabyTodayCard/BabyTodayCard';
 import MomTipCard from '@/components/MomTipCard/MomTipCard';
 import StatusBlock from '@/components/StatusBlock/StatusBlock';
 import css from './dashboard.module.css';
+import AvatarBlock from '@/components/Avatarqq/Avatarqq';
 
 const DashboardClient = async () => {
   return (
     <div className={css.container}>
       <div className={css.statusBlock}>
+        <AvatarBlock />
         <StatusBlock />
         <BabyTodayCard />
         <MomTipCard />
       </div>
+
       <div>
         <div
           style={{

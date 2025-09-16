@@ -69,7 +69,6 @@ export default function OnboardingClient() {
   const queryClient = useQueryClient();
   const [avatarPreview, setAvatarPreview] = useState<string | null>(null);
 
-  /** 🔹 Мутация онбординга */
   const onboardingMutation = useMutation({
     mutationFn: async (values: OnboardingValues) => {
       await updateUser({
@@ -81,17 +80,14 @@ export default function OnboardingClient() {
         await uploadAvatar(values.avatar);
       }
 
-      return getCurrentUser(); // возвращаем обновлённого пользователя
+      return getCurrentUser();
     },
 
     onSuccess: (user: User) => {
-      // 1️⃣ Обновляем Zustand
       setUser(user);
 
-      // 2️⃣ Обновляем кэш React Query (например, GreetingBlock)
       queryClient.setQueryData(['currentUser'], user);
 
-      // 3️⃣ Редирект
       router.push('/');
     },
 
@@ -149,6 +145,8 @@ export default function OnboardingClient() {
                 <Image
                   src={avatarPreview}
                   alt="preview"
+                  width={80}
+                  height={80}
                   style={{ width: 80, height: 80, marginTop: 8 }}
                 />
               )}
