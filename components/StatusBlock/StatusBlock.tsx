@@ -2,7 +2,7 @@
 import { useQuery } from '@tanstack/react-query';
 import css from './StatusBlock.module.css';
 import { GreetingData } from '@/types/greeting';
-import { getGreeting, getPublicGreeting } from '@/lib/api/api';
+import { getGreeting, getPublicGreeting } from '@/lib/api/clientApi';
 import { useAuthStore } from '@/lib/store/authStore';
 
 const StatusBlock = () => {

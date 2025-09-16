@@ -1,7 +1,7 @@
 'use client';
 import { useAuthStore } from '@/lib/store/authStore';
 import css from './MomTipCard.module.css';
-import { getGreeting, getPublicGreeting } from '@/lib/api/api';
+import { getGreeting, getPublicGreeting } from '@/lib/api/clientApi';
 import { useQuery } from '@tanstack/react-query';
 import { GreetingData } from '@/types/greeting';
 

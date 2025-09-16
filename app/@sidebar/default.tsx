@@ -4,7 +4,7 @@ import css from './Sidebar.module.css';
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { logout } from '@/lib/api/api';
+import { logout } from '@/lib/api/clientApi';
 
 const Sidebar = () => {
   const isLog = useAuthStore((state) => state.isAuthenticated);

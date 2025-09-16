@@ -1,8 +1,9 @@
 'use client';
+import { getCurrentUser, login, register } from '@/lib/api/clientApi';
 // 1. register
 // 2. оновлення стану аутентифікації
 // 3. редірект
-import { getCurrentUser, login, register } from '@/lib/api/api';
+
 import { useAuthStore } from '@/lib/store/authStore';
 import { RegisterCredentials, User } from '@/types/user';
 import { useMutation, useQueryClient } from '@tanstack/react-query';

@@ -54,13 +54,13 @@
 // export default SignIn;
 'use client';
 
-import { getCurrentUser, login } from '@/lib/api/api';
 import { useAuthStore } from '@/lib/store/authStore';
 import { LoginCredentials, User } from '@/types/user';
 import { useRouter } from 'next/navigation';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { getCurrentUser, login } from '@/lib/api/clientApi';
 
 // ✅ схема валидации
 const SignInSchema = Yup.object({

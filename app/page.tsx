@@ -6,7 +6,7 @@ import {
 import DashboardClient from './dashboard.client';
 
 import { cookies } from 'next/headers';
-import { getGreeting, getPublicGreeting } from '@/lib/api/api';
+import { getGreeting, getPublicGreeting } from '@/lib/api/clientApi';
 
 const Page = async () => {
   const cookieStore = await cookies();

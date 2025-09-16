@@ -1,6 +1,6 @@
 'use client';
 
-import { getCurrentUser, refreshSession } from '@/lib/api/api';
+import { getCurrentUser, refreshSession } from '@/lib/api/clientApi';
 import { useAuthStore } from '@/lib/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';

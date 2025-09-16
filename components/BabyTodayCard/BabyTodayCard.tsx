@@ -5,7 +5,7 @@ import React from 'react';
 import css from './BabyTodayCard.module.css';
 import { useAuthStore } from '@/lib/store/authStore';
 import { useQuery } from '@tanstack/react-query';
-import { getGreeting, getPublicGreeting } from '@/lib/api/api';
+import { getGreeting, getPublicGreeting } from '@/lib/api/clientApi';
 
 const BabyTodayCard = () => {
   const user = useAuthStore((s) => s.user);
