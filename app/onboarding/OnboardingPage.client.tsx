@@ -1,6 +1,5 @@
 'use client';
 
-import { getCurrentUser, updateUser, uploadAvatar } from '@/lib/api/api';
 import { Formik, Form, Field } from 'formik';
 import { useAuthStore } from '@/lib/store/authStore';
 import { useRouter } from 'next/navigation';
@@ -10,6 +9,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { User } from '@/types/user';
 import Image from 'next/image';
+import { getCurrentUser, updateUser, uploadAvatar } from '@/lib/api/clientApi';
 
 // интерфейс данных для онбординга
 interface OnboardingValues {
